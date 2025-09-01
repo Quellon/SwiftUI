@@ -1,0 +1,23 @@
+//
+//  Job.swift
+//  SwiftDataProjectApp
+//
+//  Created by Quellon Naicker on 11/1/24.
+//
+
+import Foundation
+import SwiftData
+
+@Model
+class Job{
+    var name: String = "None"
+    var priority: Int = 0
+    var owner: User?
+    
+    
+    init(name: String, priority: Int, owner: User? = nil){
+        self.name = name
+        self.priority = priority
+        self.owner = owner
+    }
+}
